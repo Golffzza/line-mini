@@ -1,6 +1,3 @@
-// Import stylesheets
-import './style.css';
-
 const env = (typeof import.meta !== 'undefined' && import.meta.env) ? import.meta.env : {};
 const nodeEnv = (typeof process !== 'undefined' && process.env) ? process.env : {};
 const query = new URLSearchParams(window.location.search);

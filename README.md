@@ -14,11 +14,14 @@ https://codelab.line.me/codelabs/line-mini-app/#0
 
 1. Create `.env` from `.env.example`
 2. Fill values:
-   - `LIFF_ID`: your LIFF app id
-   - `LINE_BOT_ID`: your LINE Official Account bot id
-   - `MINIAPP_URL`: optional shortcut URL (if empty, app uses `https://miniapp.line.me/${LIFF_ID}`)
-3. Open the app in your dev environment (StackBlitz or local server)
-4. If your env tool does not inject `.env` into browser code, pass `liffId` via URL:
+   - `VITE_LIFF_ID`: your LIFF app id
+   - `VITE_LINE_BOT_ID`: your LINE Official Account bot id
+   - `VITE_MINIAPP_URL`: optional shortcut URL (if empty, app uses `https://miniapp.line.me/${VITE_LIFF_ID}`)
+3. Install packages:
+   - `npm.cmd install`
+4. Start local dev server:
+   - `npm.cmd run dev`
+5. If your env tool does not inject `.env` into browser code, pass `liffId` via URL:
    - `...?liffId=2000000000-XXXXXXXX`
 
 ## Required LINE Console settings
